@@ -1,0 +1,38 @@
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th><b>Index</b></th>
+            <th><b>Nombre</b></th>
+            <th><b>Apellido</b></th>
+            <th><b>Cédula</b></th>
+            <th><b>Edad</b></th>
+            <th><b>Dirección</b></th>
+            <th><b>Correo</b></th>
+            <th><b>Número</b></th>
+            <th><b>Género</b></th>
+            <th><b>Estado civil</b></th>
+            <th><b>Nación</b></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{@index}}</td>
+
+            <td>{{nombre}}</td>
+            <td>{{apellido}}</td>
+            <td>{{cedula}}</td>
+            <td>{{edad}}</td>
+            <td>{{direccion}}</td>
+            <td>{{correo}}</td>
+            <td>{{numero}}</td>
+            <td>{{genero}}</td>
+            <td>{{estado}}</td>
+            <td>{{nacion}}</td>
+            <td><a href="/delete/{{_id}}" class="btn btn-danger">Eliminar</a></td>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

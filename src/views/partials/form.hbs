@@ -1,0 +1,68 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    <h3>Añadir un usuario</h3>
+    <form action="/users/add" method="POST">
+
+        {{! 1 Title Input }}
+        <div class="mb-3">
+            <input id="nombre" class="form-control rounded-0 bg-dark text-white" type="text" name="nombre"
+                placeholder="nombre" autofocus />
+        </div>
+
+        {{! 2 apellido Input }}
+        <div class="mb-3">
+            <input id="apellido" class="form-control rounded-0 bg-dark text-white" type="text" name="apellido"
+                placeholder="apellido" autofocus />
+        </div>
+
+        {{! 3 cedula Input }}
+        <div class="mb-3">
+            <input id="cedula" class="form-control rounded-0 bg-dark text-white" type="text" name="cedula"
+                placeholder="cedula" autofocus />
+        </div>
+
+        {{! 4 edad Input }}
+        <div class="mb-3">
+            <input id="edad" class="form-control rounded-0 bg-dark text-white" type="text" name="edad"
+                placeholder="edad" autofocus />
+        </div>
+
+        {{! 5 direccion Input }}
+        <div class="mb-3">
+            <input id="direccion" class="form-control rounded-0 bg-dark text-white" type="text" name="direccion"
+                placeholder="direccion" autofocus />
+        </div>
+        {{! 6 correo Input }}
+
+        <div class="mb-3">
+            <input id="correo" class="form-control rounded-0 bg-dark text-white" type="text" name="correo"
+                placeholder="correo" autofocus />
+        </div>
+
+        {{! 7 numero Input }}
+        <div class="mb-3">
+            <input id="numero" class="form-control rounded-0 bg-dark text-white" type="text" name="numero"
+                placeholder="numero" autofocus />
+        </div>
+
+        {{! 8 genero Input }}
+        <div class="mb-3">
+            <input id="genero" class="form-control rounded-0 bg-dark text-white" type="text" name="genero"
+                placeholder="genero" autofocus />
+        </div>
+
+        {{! 9 estado Input }}
+        <div class="mb-3">
+            <input id="estado" class="form-control rounded-0 bg-dark text-white" type="text" name="estado"
+                placeholder="estado" autofocus />
+        </div>
+
+        {{! 10 nacion Input }}
+        <div class="mb-3">
+            <input id="nacion" class="form-control rounded-0 bg-dark text-white" type="text" name="nacion"
+                placeholder="nacion" autofocus />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Añadir</button>
+    </form>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+
+  <form action="/users/search" method="POST">
+    <div class="input-group rounded">
+      <input type="search" class="form-control rounded" placeholder="Buscador" aria-label="Search"
+        aria-describedby="search-addon" />
+      {{!-- <i class="fas fa-search"></i> --}}
+      {{!-- <button class="">Buscar</button> --}}
+      {{!-- <a href="submit" class="">search</a> --}}
+      <button type="submit" class="input-group-text border-0 btn-primary">Buscar</button>
+    </div>
+
+    <br>
+
+    {{! Primer filtro }}
+    <div class="mb-3">
+      <input id="nombre" class="form-control rounded-0 bg-dark text-white" type="text" name="nombre"
+        placeholder="Filtro por edad" autofocus />
+    </div>
+    {{! Segundo filtro }}
+    <div class="mb-3">
+      <input id="nombre" class="form-control rounded-0 bg-dark text-white" type="text" name="nombre"
+        placeholder="Filtro por género" autofocus />
+    </div>
+    {{! Tercer filtro }}
+    <div class="mb-3">
+      <input id="nombre" class="form-control rounded-0 bg-dark text-white" type="text" name="nombre"
+        placeholder="Filtro por nacionalidad" autofocus />
+    </div>
+  </form>
+
+</div>

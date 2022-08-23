@@ -1,5 +1,6 @@
-import app from "./app";
-import "./utils/mongoose";
+import app from './app'
+// Conexión a mongoDB.
+import '../DB/database'
 
-app.listen(app.get("port"));
-console.log(`server on port ${app.get("port")}`);
+app.listen(3200)
+console.log('server port', 3200)

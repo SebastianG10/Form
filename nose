@@ -1,0 +1,14 @@
+export const userSearch = async (req, res) => {
+    try {
+        console.log(req.body)
+        
+        const usuario = await User.find(
+            {
+                edad: ""
+            }
+        )
+    } catch (error) {
+
+    }
+    console.log('Nacho')
+}
